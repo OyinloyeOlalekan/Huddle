@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+button{
+    cursor: pointer;
+}
+main{
+    background-image: url("images/bg-hero-desktop.svg");
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 20px;
+}
+header button{
+    padding:12px 30px;
+    background-color:  white;
+    border-radius: 30px;
+}
+#ilustration-img{
+    width: 100%;
+    display:block;
+}
+#main-section{
+margin-top: 200px;
+display:grid;
+grid-template-columns: 1fr 1fr;
+padding:10px 30px;
+gap: 20px;
+}
+.main-text-content{
+    max-width: 350px;
+}
+.main-text-content h1{
+text-align:left;
+font: size 130%;
+font-weight: 900;
+line-height: 130%;
+padding-bottom: 20px;
+}
+.main-text-content p{
+    text-align:left;
+font-size: 120%;
+font-weight:lighter;
+line-height: 130%;
+}
+.main-text-content button,#community button{
+    background-color:  hsl(322, 100%, 66%);
+    width: 300PX;
+    height: 45PX;
+    margin-top:20px;
+    border-radius:20px;
+}
+#grow-together,#your-users{
+    display: grid;
+    grid-template-columns:60% 40%;
+    margin-top: 200px;
+    padding:50px 80px;
+    width: 95%;
+    margin:100px auto;
+    border: 3px solid beige;
+    align-items: center;
+    margin-bottom: 200px;
+}
+#grow-together img,#your-users img{
+    display: block;
+    width: 100%;
+}
+#grow-together div h2, #flowing-conversation div h2,#your-users div h2{
+    font-size:2.2em;
+    font-weight: 700;
+}
+#grow-together div p,#flowing-conversation div p,#your-users div p{
+    font-size: 140%;
+    line-height: 24px;
+    font-weight: 100;
+    text-align:start;
+    max-width: 520px;
+    margin-top: 20px;
+}
+#flowing-conversation{
+    display: grid;
+    grid-template-columns:40% 60%;
+    margin-top: 200px;
+    padding:50px 80px;
+    width: 95%;
+    margin:100px auto;
+    border: 3px solid beige;
+    align-items: center;
+    margin-bottom: 200px;  
+    gap:10%; 
+}
+#flowing-conversation img{
+    display: block;
+    width: 100%;
+}
+#community{
+    width: 90%;
+    margin:0 auto;
+    margin-top: -200px;
+    border:5px solid beige;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 50px 0;
+    gap: 20px;
+    z-index: 98;
+    background-color: white;
+    padding-bottom:150px;
+}
+#community button{
+    margin:0 auto;
+    text-align: center;
+    grid-column: 6 /  13;
+}
+#community h2{
+    font-size:160% ;
+    font-weight:600;
+    margin-bottom: 20px;
+    text-align:center;
+}
+#footer{
+    display: grid;
+   grid-template-columns: repeat(12, 1fr);
+
+}
+footer{
+    background-color: hsl(192, 100%, 9%);
+    padding: 80px 60px;
+}
+footer .img{
+    background-color:white;
+    grid-column: 1 / 13;
+    margin-bottom:50px;
+    margin-top: 150px;
+}
+#footer-cointainer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.contact{
+    grid-column:span 4;
+    color: white;
+}
+.details{
+    grid-column: span 3;
+    text-align: center;
+}
+.details p a,.blog p a {
+    color: white;
+    text-decoration: none;
+}
+.details p, .blog p{
+    margin-bottom: 8px;
+}
+.blog{
+    grid-column:span 3;
+}
+.contact p a{
+    color: white;
+    margin: 15px 0;
+}
+.align-center a {
+    margin-left:5px;
+}
+.contact p{
+    padding:15px 0;
+}
+.Copyright{
+    margin-top:15px;
+    color:white;
+    text-align: right;
+    grid-column: 8 / span 12;
+}
+.contact p a{
+    text-decoration: none;
+}
+@media screen and (max-width:768px){
+    #main-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+    }
+    .main-text-content{
+        width: 100%;
+    }
+    #main-section .main-text-content h1,#main-section .main-text-content p{
+        text-align: center;
+    }
+    #grow-together,#flowing-conversation{
+        display: block;
+    }
+    #grow-together div ,#flowing-conversation div,#your-users div{
+        margin-bottom:50px;
+    }
+    #grow-together h2 p,#flowing-conversation h2 p,#your-users h2 p {
+        text-align: center;
+    }
+    #your-users{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    #grow-together{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #community{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+        height:fit-content;
+        margin-bottom:30PX;
+    }
+    #community button{
+        width:fit-content;
+    }
+    footer{
+        display:block;
+    }
+    .details{
+        text-align: left;
+        margin:20px 0;
+    }
+    .align-center{
+        display:flex;
+        justify-content: center;
+    }
+    .align-center a {
+        margin-left:15px;
+    }
+    .Copyright{
+        margin-top:15px;
+        color:white;
+        text-align: center;
+    }
+    #footer-cointainer{
+        display:block;
+    }
+    #community{
+        width:90%;
+        height: 200px;
+    }
+}
+@media screen and (max-width:405px){
+    header button{
+        padding:12px 0;
+        background-color:  white;
+        border-radius: 30px;
+        background-color:  white;
+        border-radius: 30px;
+        font-size: 10px;
+    }
+    header img{
+        padding:0;
+        width: 50%;
+        margin: 15px auto;
+    }
+    h2 h1{
+        font-size:1em;
+        font-weight:400;
+    }
+   /* .main-text-content button{
+        width:200px;
+    } */
+}
+/* hover effcts */
+button:hover{
+    opacity:0.7;
+}
+footer div p a:hover{
+    text-decoration:underline;
+}
+.align-center img:hover{
+    background-color: red;
+}
